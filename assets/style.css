@@ -1,12 +1,11 @@
 
-/* html{
-    font-size: 62.5%;
-} */
 body{
-    /* display:flex;
-    flex-direction: column; */
+    /* display:flex; */
+    flex-direction: column;
     line-height: 1.3;
     box-sizing: border-box;
+    /* max-width: 80%vw;
+    justify-content: center; */
 }
 
 header{
@@ -53,10 +52,6 @@ nav a{
     
 } 
 
-/* main{
-    display:flex;
-    flex-wrap: wrap;
-} */
 
 .subtitle{
     display:flex;
@@ -79,6 +74,9 @@ nav a{
 }
 
 .about-me-aside{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
     font-size: 2rem;
     flex-basis: 30%;
     box-sizing: border-box;
@@ -87,18 +85,22 @@ nav a{
 
 .about-me-main{
     text-indent: 50px;
-    flex-basis: 60%;
+    flex-basis: 70%;
     padding-left: 50px;
 
 }
 
 .work{
     display:flex;
+    /* justify-content: space-between; */
     max-width: 90%vw;
     margin: 40px;
 }
 
 .work-aside{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
     font-size: 2rem;
     flex-basis: 30%;
     box-sizing: border-box;
@@ -110,45 +112,92 @@ nav a{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex-basis: 60%;
+    flex-basis: 70%;
     padding-left: 50px;
 
 }
 
-.pjt1 img{
+.large-card{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    border: 5px solid aquamarine;
+    height: 21.8rem;
+}
+
+.large-card h3{
+    position: relative;
+    font-size: 40px;
+    border: 5px 5px 5px 0;
+    margin-top: 13rem;
+    background: aquamarine;
+    
+}
+
+/* .large-card p{
+    position: relative;
+    margin-top: 14rem;
+} */
+
+
+.small-card{
+    display: flex;
+    border: 5px solid aquamarine;
+    width: 48%; 
+    height: 12rem;
+    margin-top: 50px;
+
+}
+
+
+/* .large-card img{
     width: 100%;
     height: 600px;
     justify-content: center;
 }
 
-.pjt2 img{
-    width:21.8rem;
+.small-card{
+    width:45%;
     height: 21.8rem;
     margin-top: 50px;
 }
+*/
 
-.pjt3 img{
-    width:21.8rem;
-    height: 21.8rem;
-    margin-top: 50px;
+.contact-me{
+    display:flex;
+    max-width: 90%vw;
+    margin: 40px;
 }
 
-.pjt4 img{
-    width:21.8rem;
-    height: 21.8rem;
-    margin-top: 50px;
+.contact-me-side{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    font-size: 2rem;
+    box-sizing: border-box;
+    border-right: 5px solid black;
+    flex-basis: 30%;
 }
 
-.pjt5 img{
-    width:21.8rem;
-    height: 21.8rem;
-    margin-top: 50px;
+
+.contacts{
+    display:flex;
+    padding-left: 50px;
+    flex-direction:row;
+    flex-basis: 70%;
+    align-content: space-between;
+}
+ 
+.contacts ul{
+    display: flex;
 }
 
-
-
-
-
+.contacts a{
+    flex: 4 0 25%;
+    font-size: 1.3rem;
+    margin:0 10px 0 10px;
+    
+}
 /* .about-me-aside h2{
     font-size: 2rem;
     flex-wrap:wrap;

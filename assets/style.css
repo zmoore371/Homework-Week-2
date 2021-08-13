@@ -92,7 +92,6 @@ nav a{
 
 .work{
     display:flex;
-    /* justify-content: space-between; */
     max-width: 90%vw;
     margin: 40px;
 }
@@ -119,26 +118,29 @@ nav a{
 
 .large-card{
     display:flex;
+    background-image:url("../images/project-1.jpg");
+    background-size: cover;
     flex-direction: column;
     width: 100%;
     border: 5px solid aquamarine;
     height: 21.8rem;
 }
 
+
 .large-card h3{
     position: relative;
     font-size: 40px;
     border: 5px 5px 5px 0;
     margin-top: 13rem;
-    background: aquamarine;
-    
+    background-color: aquamarine;
+    padding-right: 40px;
+    margin-right: 60%;
 }
 
-/* .large-card p{
-    position: relative;
-    margin-top: 14rem;
-} */
-
+.large-card a{
+    display:block;
+    width: 100%;
+}
 
 .small-card{
     display: flex;
@@ -149,19 +151,25 @@ nav a{
 
 }
 
-
-/* .large-card img{
-    width: 100%;
-    height: 600px;
-    justify-content: center;
+#small-card1{
+    background-image:url("../images/project-2.jpg");
+    background-size: cover;
 }
 
-.small-card{
-    width:45%;
-    height: 21.8rem;
-    margin-top: 50px;
+#small-card2{
+    background-image:url("../images/project-3.jpg");
+    background-size: cover;
 }
-*/
+
+#small-card3{
+    background-image:url("..//images/project-4.jpg");
+    background-size: cover;
+}
+
+#small-card4{
+    background-image:url("../images/project-5.jpg");
+    background-size: cover;
+}
 
 .contact-me{
     display:flex;
@@ -198,83 +206,3 @@ nav a{
     margin:0 10px 0 10px;
     
 }
-/* .about-me-aside h2{
-    font-size: 2rem;
-    flex-wrap:wrap;
-    padding: 80px;
-    flex: 40%;
-    
-}
-
-.about-me-main{
-    display:flex;
-    flex: 60%;
-    flex-direction: column;
-    border-left: 2px solid black;
-}
-
-.about-me-main p{
-    font-size: 1.3rem;
-    padding: 0 20px 20px 20px;
-    text-indent: 50px;
-
-}
-
-.work-aside{
-    width:100%;
-    background-color: red;
-    display:flex;
-}
-
-.work-aside-header{
-    
-    
-}
-
-.work-main{
-    flex:60%;
-    border-left: 2px solid black;
-}
- */
-
-
-/* .work-aside{
-    font-size: 2rem;
-    flex-wrap:wrap;
-    padding: 80px;
-    flex: 40%;
-}
-
-.work-main{
-    display:flex;
-    flex: 60%;
-    flex-direction: column;
-    border-left: 2px solid black;
-}
-
-.work-main p{
-    padding: 0 20px 20px 20px;
-} */
-
-/* .projects{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex: 60%;
-    width: 60%;
-    border-left:2px solid black;
-    float: right;
-    padding-top: 80px;
-}
-
-.pjt1, .pjt2, .pjt3, .pjt4, .pjt5{
-    display: flex;
-    border: 2px solid black;
-}
-
-.pjt1 img{
-    width: 90%;
-    height: 400px;
-    
-}  */
-]

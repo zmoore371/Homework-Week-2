@@ -1,8 +1,16 @@
+:root{
+    --teal:#20d0c4;
+    --darkblue:#12263A;
+}
+
+
+
 
 body{
     flex-direction: column;
     line-height: 1.3;
     box-sizing: border-box;
+    font-family: sans-serif Georgia, 'Times New Roman', Times, serif;
 }
 
 header{
@@ -15,9 +23,10 @@ header{
 
 h1{
     font-size: 200%;
-    background-color:yellow;
+    background-color:var(--darkblue);
     height: 50px;
     padding: 10px;
+    color: #F4EDEA;
     
 }
 
@@ -31,6 +40,7 @@ nav a{
     flex-direction: row;
     margin:0 20px 0 25px;
     border-bottom: 3px solid black;
+    color: var(--darkblue);
 }
 
 .upper-img{
@@ -50,8 +60,8 @@ nav a{
 } 
 
 .subtitle{
-    display:flex;
-    background:red;
+    background:var(--darkblue);
+    color: #F4EDEA;
     box-sizing: border-box;
     height: 40px;
     position: relative;
@@ -118,12 +128,16 @@ nav a{
     background-size: cover;
     flex-direction: column;
     width: 100%;
-    border: 5px solid #20d0c4;
+    border: 5px solid var(--teal);
     height: 21.8rem;
     text-decoration: none;
     position: relative;
 }
-
+.large-card:hover,
+.small-card:hover{
+    box-shadow: inset 0px 0px 8px var(--teal), 0 0 15px var(--teal);
+      
+}
 
 .label{
     position: absolute;
@@ -145,12 +159,10 @@ nav a{
 .small-card{
     display: flex;
     position: relative;
-    border: 5px solid #20d0c4;
+    border: 5px solid var(--teal);
     width: 48%; 
     height: 12rem;
     margin-top: 50px;
-    
-
 }
 
 #small-card1{
@@ -191,7 +203,6 @@ nav a{
     height: 1600px; */
 }
 
-
 .contacts{
     display:flex;
     padding-left: 50px;
@@ -205,20 +216,124 @@ nav a{
     justify-content: space-between;
     font-size: 2rem;
     
-    
 }
 
 .contacts li{
     display:block;
     text-decoration: underline;
-    color:grey;
-    /* flex-wrap: nowrap;
-    width: 100%;
-    white-space: nowrap*/ 
+    color:grey; 
 }
 
 footer{
     height:50px;
     width:100%;
 }
+
+@media screen and (max-width: 576px){
+    header{
+        flex-direction: column;
+        height: 9rem;
+    }
+    h1{
+        width: 100%;
+        text-align: center;
+    }
+
+    nav{
+       margin: 25px 0 25px 0;
+       font-size: 2rem;
+    }
+
+    .subtitle{
+        height: 40px;
+        position: relative;
+        margin-top: 0;
+        margin-left: 0;
+        padding: 0;
+        width: 80%;
+        left: 10%;
+        text-align: center;
+        margin-top: 190px; 
+
+    }
+    .about-me{
+        flex-direction: column;
+        
+        
+    }
+    .about-me-aside{
+        order: 1;
+        flex-basis:100%;
+        justify-content: flex-start;
+        border-right: none;
+        border-bottom: 5px solid black;
+        padding-bottom: 20px;
+    } 
+    .about-me-main{
+        order:2;
+        flex-basis: 100%;
+        padding-left: 0;
+        padding-top: 15px;
+    }
+    .work{
+        display:flex;
+        flex-direction: column;
+    }
+    .work-main{
+        display:flex;
+        order: 2;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 100%;
+        padding-left: 0;
+        padding-top: 15px;
+    }
+    .work-aside{
+        display: flex;
+        order: 1;
+        justify-content: flex-start;
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 5px solid black;
+        padding-bottom: 20px;
+        height: 12rem;
+    }
+    .large-card{
+        height: 12rem;
+    }
+    .small-card{
+        width: 100%; 
+        height: 12rem;
+        margin-top: 50px;
+    }
+    .contact-me{
+        flex-direction: column;
+    }
+    
+    .contact-me-side{
+        justify-content: flex-start;
+        padding-right: 10px;
+        order: 1;
+        border-right: none;
+        flex-basis: 100%;
+        border-bottom: 5px solid black;
+    }
+    
+    .contacts{
+        padding-left: 0;
+        padding-top: 15px;
+        order: 2;
+        flex-direction: column;
+    }
+     
+    .contacts ul{
+        width: 100%;
+        justify-content: space-between;
+        font-size: 2rem;
+        flex-direction: column;
+    }
+    
+    
+}
+
 
